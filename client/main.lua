@@ -12,6 +12,7 @@ Citizen.CreateThread(function(source)
         SetDiscordAppId(28493238745932) -- Place your application id here  
 		local onlinePlayers = GetNumberOfPlayers()
         SetRichPresence("ID: " .. GetPlayerServerId(NetworkGetEntityOwner(GetPlayerPed(-1))) .. "  |  " .. #GetActivePlayers() .. " Spieler" .. " | " .. "Standort: " .. GetLabelText(zone) .. " - " .. GetStreetNameFromHashKey(Streethash))
+      --SetRichPresence("ID: " .. GetPlayerServerId(NetworkGetEntityOwner(GetPlayerPed(-1))) .. "  |  " .. #GetActivePlayers() .. " Players" .. " | " .. "Location: " .. GetLabelText(zone) .. " - " .. GetStreetNameFromHashKey(Streethash))
 
         SetDiscordRichPresenceAsset("large")
         SetDiscordRichPresenceAssetText("1o2r3n Localhost")
